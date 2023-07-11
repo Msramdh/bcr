@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar dengan Tulisan Rata Kanan</title>
+  <style>
+    body {
+      margin-top: 500px;
+      padding: 0;
+      font-family: Helvetica;
+    }
+
+    .navbar {
+      padding: 20px;
+      padding-left : 50px;
+      padding-right: 50px;
+      display: flex;
+      align-items: center;
+      background-color: #F1F3FF;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      flex-grow: 1;
+      text-align: right;
+      margin-right: 5%;
+    }
+
+    .navbar li {
+      display: inline-block;
+    }
+
+    .navbar li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .navbar .rectangle {
+      width: 120px;
+      height: 40px;
+      background-color: #0D28A6;
+      margin-left: 5%;
+    }
+    .button-green{
+        background-color: #5CB85F;
+        padding: 15px;
+        text-decoration: none;
+        color: #FFf;
+    }
+    .navbar .button-green{
+        color: #FFf;
+    }
+    .main1 .img-right{
+        float: right;
+        width: 50%;
+        margin-top: 100px;
+    }
+    .main1 .text{
+        margin-top: 150px;
+        margin-left: 10%;
+        width: 30%;
+    }
+    .text{
+        display: inline-block;
+        font-size: large;
+    }
+    .main1{
+        width: 100%;
+        height: 660px;
+        left: 0;
+        background-color: #F1F3FF;
+    }
+    .main2{
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .img-left{
+        width: 35%;
+        float: left;
+    }
+    .main2 .text{
+        width: 50%;
+        float: right;
+    }
+    .main2 table td{
+        padding: 10px;
+    }
+    .main2 table td img{
+        width: 40px;
+    }
+    .main3{
+        margin-top: 1000px;
+        margin-left: 15%;
+    }
+    .main3 table td{
+        margin-right: 10%;
+        width: 25%;
+        border-radius: 10px;
+
+    }
+    .main3 table h3{
+        text-align: left;
+    }
+    .main3 table{
+        width: 80%;
+    }
+    .main3 table div{
+        padding: 20px;
+        margin-right: 25px;
+        height: 100%;
+        border-radius: 10px;
+        border: solid 1px rgb(196, 196, 196);
+        text-align: left;
+    }
+    .main4 .text{
+        margin-left: 40%;
+        text-align: center;
+        width: 20%;
+    }
+    .main4 .comment{
+        justify-content: center;
+        background-color: #F1F3FF;
+        width: 90%;
+        height: 300px;
+        border-radius: 20px;
+    }
+    .carousel {
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+      width: 80%;
+      flex-shrink: 0;
+      position: relative;
+      opacity: 1;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .carousel-controls button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .comment .rate{
+        width:100px ;
+    }
+    .comment .pfp{
+        width: 25%;
+    }
+    .comment .pfp img{
+        width: 25%;
+        margin-left: 30%;
+    }
+    .comment table{
+        height: 100%;
+    }
+    .carousel .prev-button, .carousel .next-button{
+        border: none;
+        background-color: #fff;
+        height: 100px;
+    }
+    .carousel .prev-button img{
+        width: 50px;
+    }
+    .carousel .next-button img{
+        width: 50px;
+    }
+  </style>
+  <link rel="stylesheet" href="../login/style.css">
+  <div class="navbar">
+    <div class="rectangle"></div>
+    <ul>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Why Us?</a></li>
+      <li><a href="#">Testimonial</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="../login/sign-up.html" class="button-green">Register</a></li>
+    </ul>
+  </div>
+</head>
+<body>
+  <div class="main-content">
+    <div class="main1">
+        <div class="text">
+            <h1>Sewa Rental & Mobil Terbaik di Kawasan(Lokasimu)</h1>
+            <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p><br>
+            <a href="#" class="button-green">Mulai Sewa Mobil</a>
+          </div>
+          <img class="img-right" src="img_car.png" alt="" srcset="">
+    </div>
+    <div class="main2">
+        <img src="img_service.png" alt="" srcset="" class="img-left">
+        <div class="text">
+            <h1>Best Kind Of Any Trip in (Lokasimu!)</h1>
+            <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+            <table>
+                <tr>
+                    <td><img src="icons/group 53.png" alt="" srcset=""></td><td>Sewa Mobil Dengan Supir Di Bali 12 Jam</td>
+                </tr>
+                <tr>
+                    <td><img src="icons/group 53.png" alt="" srcset=""></td><td>Sewa Mobil Lepas Kunci di Bali 24 Jam</td>
+                </tr>
+                <tr>
+                    <td><img src="icons/group 53.png" alt="" srcset=""></td><td>Sewa Mobil Jangka Panjang Bulanan</td>
+                </tr>
+                <tr>
+                    <td><img src="icons/group 53.png" alt="" srcset=""></td><td>Gratis Antar - Jemput Mobil di Bandara</td>
+                </tr>
+                <tr>
+                    <td><img src="icons/group 53.png" alt="" srcset=""></td><td>Layanan Airport Transfer / Drop In Out</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="main3">
+        <h1>Why Us?</h1>
+        <p>Mengapa Harus pilih Binar Car Rental?</p>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <img src="icons/icon_complete.png" alt="">
+                        <h3>Mobil Lengkap</h3>  
+                        <P>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</P>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="icons/icon_price.png" alt="">
+                        <h3>Harga Murah</h3>
+                        <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="icons/icon_24hrs.png" alt="">
+                        <h3>Layanan 24 Jam</h3>
+                        <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="icons/icon_professional.png" alt="">
+                        <h3>Sopir Professional</h3>
+                        <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="main4">
+        <div class="text">
+            <h2>Testimonial</h2>
+            <p>Berbagai review positif dari pelanggan kami</p>
+        </div>
+        <div class="carousel">
+        <div class="carousel-inner">
+                <div class="carousel-item active">
+                <div class="comment">
+                    <table>
+                        <tr>
+                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
+                            <td>
+                                <img src="Rate.png" class="rate" alt="" srcset="">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
+                                <b>John Dee 32, Bromo</b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="comment">
+                    <table>
+                        <tr>
+                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
+                            <td>
+                                <img src="Rate.png" class="rate" alt="" srcset="">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
+                                <b>John Dee 32, Bromo</b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="comment">
+                    <table>
+                        <tr>
+                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
+                            <td>
+                                <img src="Rate.png" class="rate" alt="" srcset="">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
+                                <b>John Dee 32, Bromo</b>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="prev-button"><img src="icons/Left button.png" alt="" srcset=""></button>
+            <button class="next-button"><img src="icons/Right button.png" alt="" srcset=""></button>
+          </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const carousel = document.querySelector(".carousel");
+              const prevButton = carousel.querySelector(".prev-button");
+              const nextButton = carousel.querySelector(".next-button");
+              const carouselInner = carousel.querySelector(".carousel-inner");
+              const carouselItems = carousel.querySelectorAll(".carousel-item");
+        
+              let currentIndex = 0;
+              carouselInner.style.transform = `translateX(10%)`;
+        
+              prevButton.addEventListener("click", function() {
+                if (currentIndex === 0) {
+                  currentIndex = carouselItems.length - 2;
+                } else {
+                  currentIndex--;
+                }
+                updateCarousel();
+              });
+        
+              nextButton.addEventListener("click", function() {
+                if (currentIndex === carouselItems.length - 1) {
+                  currentIndex = 0;
+                } else {
+                  currentIndex++;
+                }
+                updateCarousel();
+              });
+        
+              function updateCarousel() {
+                carouselItems.forEach(function(item, index) {
+                  if (index === currentIndex) {
+                    item.classList.add("active");
+                  } else {
+                    item.classList.remove("active");
+                  }
+                });
+                carouselInner.style.transform = `translateX(-${currentIndex * 80}%)`;
+              }
+            });
+          </script>
+        </body>
+        </html>
+        
+    </div>
+  </div>
+</body>
+</html>
