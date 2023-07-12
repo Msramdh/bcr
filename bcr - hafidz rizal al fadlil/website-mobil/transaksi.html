@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sewa Mobil</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/log.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Binar Car Rental</a>
+        <button
+          class="btn btn-success d-md-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-success" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="main-section pt-md-5">
+      <div class="container h-100 d-flex pt-md-5">
+        <div class="col-md-6 tagline py-5">
+          <div class="card">
+            <div class="card-body">
+              <h5>Tentang Paket</h5><br>
+              <p><strong>Include</strong></p>
+              <p><img src="img/circle.svg">&nbsp; Apa saja yang termasuk dalam paket misal durasi max 12 jam
+              <br><img src="img/circle.svg">&nbsp; Sudah termasuk bensin selama 12 jam
+              <br><img src="img/circle.svg">&nbsp; Sudah termasuk Tiket Wisata
+              <br><img src="img/circle.svg">&nbsp; Sudah termasuk pajak</p>
+              <p><strong>Exclude</strong></p>
+              <p><img src="img/circle.svg">&nbsp;Tidak termasuk biaya makan sopir Rp 75.000/hari
+              <br><img src="img/circle.svg">&nbsp;Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp20.000/jam
+              <br><img src="img/circle.svg">&nbsp;Tidak termasuk akomodasi penginapan</p>
+              <p><strong>Refund, Reschedule, Overtime</strong></p>
+              <p><img src="img/circle.svg">&nbsp; Tidak termasuk biaya makan sopir Rp 75.000/hari
+              <br><img src="img/circle.svg">&nbsp;Tidak termasuk akomodasi penginapan
+              <br><img src="img/circle.svg">&nbsp;  Tidak termasuk biaya makan sopir Rp 75.000/hari
+              <br><img src="img/circle.svg">&nbsp;  Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam
+              <br><img src="img/circle.svg">&nbsp; Tidak termasuk akomodasi penginapan
+              <br><img src="img/circle.svg">&nbsp; Tidak termasuk biaya makan sopir Rp 75.000/hari
+              <br><img src="img/circle.svg">&nbsp;  Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam
+              <br><img src="img/circle.svg">&nbsp;Tidak termasuk akomodasi penginapan</p>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- masig dalam proses
+        <div class="main-section pt-md-5">
+            <div class="container h-100 d-flex pt-md-5">
+              <div class="col-md-6 tagline py-5"></div>
+              <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <div class="card2">
+                  <div class="card-body">
+                    
+                    <img src="img/mobil1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           Konten kartu di sini -->
+      </div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script>
+      gsap.from(".main-section img", { duration: 3, x: 100, opacity: 0 });
+      gsap.from(".main-section span", { duration: 3, y: 100, opacity: 0 });
+      gsap.from(".main-section .tagline", { duration: 3, x: -100, opacity: 0 });
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

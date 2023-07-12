@@ -1,0 +1,373 @@
+body {
+    margin-top: 500px;
+    padding: 0;
+    font-family: Helvetica;
+  }
+
+  .navbar {
+    padding: 20px;
+    padding-left : 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #F1F3FF;
+  }
+
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 5%;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+
+  .navbar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .rectangle {
+    width: 120px;
+    height: 40px;
+    background-color: #0D28A6;
+  }
+  .navbar .rectangle{
+    margin-left: 5%;
+  }
+  .button-green{
+      background-color: #5CB85F;
+      padding: 15px;
+      text-decoration: none;
+      color: #FFf;
+  }
+  .navbar .button-green{
+      color: #FFf;
+  }
+  .main1 .img-right{
+      float: right;
+      width: 50%;
+      margin-top: 100px;
+  }
+  .main1 .text{
+      margin-top: 150px;
+      margin-left: 10%;
+      width: 30%;
+  }
+  .text{
+      display: inline-block;
+      font-size: large;
+  }
+  .main1{
+      width: 100%;
+      height: 660px;
+      left: 0;
+      background-color: #F1F3FF;
+  }
+  .main2{
+      width: 80%;
+      margin: auto;
+      margin-top: 10%;
+  }
+  .img-left{
+      width: 35%;
+      float: left;
+  }
+  .main2 .text{
+      width: 50%;
+      float: right;
+  }
+  .main2 table td{
+      padding: 10px;
+  }
+  
+  .main3{
+      margin-top: 1000px;
+      margin-left: 10%;
+  }
+  .container3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 90%  ;
+  }
+  .main3 .why{
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-right: 10%;
+      width: 80%;
+      border-radius: 10px;
+      border: solid 1px rgb(196, 196, 196);
+
+  }
+  .main3 .why img{
+      width: 50px;
+      margin-bottom: 20px;
+  }
+  .main4{
+    width: 100%;
+  }
+  .main4 .text{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main4 .comment{
+      justify-content: center;
+      background-color: #F1F3FF;
+      width: 90%;
+      height: 300px;
+      border-radius: 20px;
+  }
+  .carousel {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel-item {
+    width: 80%;
+    flex-shrink: 0;
+    position: relative;
+    opacity: 1;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .carousel-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .comment .rate{
+      width:100px ;
+  }
+  .comment .pfp{
+      width: 25%;
+  }
+  .comment .pfp img{
+      width: 25%;
+      margin-left: 30%;
+  }
+  .comment table{
+      height: 100%;padding: 20px;
+  }
+  .carousel .prev-button, .carousel .next-button{
+      border: none;
+      background-color: #fff;
+      height: 100px;
+  }
+  .carousel .prev-button img, .carousel .next-button img{
+      width: 30px;
+      background-color: #fff;
+      border: solid 2px rgb(134, 134, 134);
+      border-radius: 100%;
+  }
+  .carousel .next-button img{
+      transform: rotate(180deg);
+  }
+  .carousel .prev-button img:hover, .carousel .next-button img:hover{
+    background-color: #A347A0;
+    border:solid 2px #A347A0;
+    filter: invert(1);
+  }
+  .main5{
+    margin-left: 10%;
+    background-color: #0D28A6;
+    border-radius: 20px;
+    width: 80%;
+    height: 400px;
+    text-align: center;
+  }
+  .main5 .text{
+    margin-top: 5%;
+    color: white;
+    padding: 20px;
+  }
+  .main6{
+    width: 80%;
+    margin-left: 10%;
+    display: block;
+  }
+  .main6 .text{
+    width: 50%;
+    margin-top: 80px;
+    height: 400px;
+  }
+  .dropdown-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown-content.show {
+    opacity: 1;
+    max-height: 200px; /* Atur tinggi maksimum sesuai kebutuhan Anda */
+  }
+  .question button{
+    text-align: left;
+    background: none;
+    width: 100%;
+    border: 0px;
+    border-style: none;
+    font-size: larger;
+    height: 50px;
+  }
+  .question{
+    border: solid 1px rgb(182, 182, 182);
+    width: 80%;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 20px;
+  }
+  .question img{
+    float: right;
+    transform: rotate(90deg);
+  }
+  .question button .rotate{
+    transform: rotate(180deg);
+  }
+  .FAQ{
+    margin-top: 40px;
+    float: right;
+    width: 50%;
+  }
+  footer{
+    width: 90%;
+    margin-left: 10%;
+    position: relative;
+  }
+  footer .alamat, footer .social, footer .menu, footer .copyright{
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .social table img{
+    width: 40px;
+  }
+  footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .footer{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .header-mobile{
+    padding: 5%;
+    display: none;
+    height: 50px;
+    width: 90%;
+  }
+  .header-mobile button{
+    float: right;
+    height: 100%;
+    margin-right: 20px;
+    border: none;
+    background: none;
+  }
+  .header-mobile button img{
+    float: right;
+    width: 40px;
+  }
+  .sidebar{
+  }
+  @media (max-width: 768px) {
+    .header-mobile{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  .navbar{
+    display: none;
+  }
+  .main1{
+    width: 100%;
+  }
+  .main2{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .main1 .text, .main2 .text{
+    width: 90%;
+    margin-top: 0px;
+  }
+  .main1 .img-right{
+    float: left;
+    width: 100%;
+  }
+  .img-left{
+  width: 100%;
+  }
+  .container3{
+    display: block;
+  }
+  .main3 .why{
+    width: 90%;
+    height: 200px;
+  }
+  .main6 .text, .main6 .FAQ{
+    width: 100%;
+  }
+  .main6 .FAQ{
+    margin-top: 00px;
+  }
+  .main6 .question{
+    font-size: smaller;
+    width: 90%;
+  }
+  .question img{
+  }
+  .footer{
+    margin-top: 400px;
+    display: block;
+  }
+  footer{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  footer .alamat, footer .social, footer .menu, footer .copyright{
+    display: block;
+    margin-top: 20px;
+  }
+  .footer .alamat{
+    width: 80%;
+  }
+  .footer .menu{
+    margin-left: 10px;
+  }
+  .footer .social table{
+    width: 90%;
+  }
+  .comment .pfp{
+    display: none;
+}
+}
