@@ -6,23 +6,58 @@
   <div class="navbar">
     <div class="rectangle"></div>
     <ul>
-      <li><a href="#">Our Services</a></li>
-      <li><a href="#">Why Us?</a></li>
-      <li><a href="#">Testimonial</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="#our-services" class="scroll-link">Our Services</a></li>
+      <li><a href="#why-us" class="scroll-link">Why Us?</a></li>
+      <li><a href="#testimonial" class="scroll-link">Testimonial</a></li>
+      <li><a href="#faq" class="scroll-link">FAQ</a></li>
       <li><a href="../login/sign-up.html" class="button-green">Register</a></li>
     </ul>
   </div>
-  <div class="sidebar">
-    
-  </div>
+    <div class="sidebar hidden">
+      <div class="title">
+        <h2>BCR</h2>
+      <button class="sidebarBtn" onclick="toggleSidebar()"><img src="icons/fi_x.png" alt=""></button>
+      </div>
+      <nav>
+        <ul type="none">
+          <li><a href="#our-services" class="scroll-link">Our Services</a></li>
+          <li><a href="#why-us" class="scroll-link">Why Us?</a></li>
+          <li><a href="#testimonial" class="scroll-link">Testimonial</a></li>
+          <li><a href="#faq" class="scroll-link">FAQ</a></li>
+        </ul>
+        <a href="../login/sign-up.html" class="button-green">Register</a>
+      </nav>
+    </div>
+    <div class="overlay hidden"></div>
+<script>
+  function toggleSidebar() { 
+  var sidebar = document.querySelector('.sidebar');
+  var overlay = document.querySelector('.overlay');
+  sidebar.classList.toggle('hidden');
+  overlay.classList.toggle('hidden');
+}
+</script>  
 </head>
 <body>
+  <script>
+    const scrollLinks = document.querySelectorAll('.scroll-link');
+
+    scrollLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+  </script>
   <div class="main-content">
     <div class="main1">
       <div class="header-mobile">
         <div class="rectangle"></div>
-        <button> <img src="icons/fi_menu.png" alt=""></button>
+        <button onclick="toggleSidebar()"><img src="icons/fi_menu.png" alt=""></button>
       </div>
         <div class="text">
             <h1>Sewa Rental & Mobil Terbaik di Kawasan(Lokasimu)</h1>
@@ -31,7 +66,7 @@
           </div>
           <img class="img-right" src="img_car.png" alt="" srcset="">
     </div>
-    <div class="main2">
+    <div class="main2" id="our-services">
         <img src="img_service.png" alt="" srcset="" class="img-left">
         <div class="text">
             <h1>Best Kind Of Any Trip in (Lokasimu!)</h1>
@@ -55,7 +90,7 @@
             </table>
         </div>
     </div>
-    <div class="main3">
+    <div class="main3" id="why-us">
       <h1>Why Us?</h1>
         <p>Mengapa Harus pilih Binar Car Rental?</p>
         <div class="container3">
@@ -81,7 +116,7 @@
         </div>
         </div>
     </div>
-    <div class="main4">
+    <div class="main4" id="testimonial">
         <div class="text">
             <h2>Testimonial</h2>
             <p>Berbagai review positif dari pelanggan kami</p>
@@ -90,60 +125,44 @@
         <div class="carousel-inner">
                 <div class="carousel-item active">
                 <div class="comment">
-                    <table>
-                        <tr>
-                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
-                            <td>
-                                <img src="Rate.png" class="rate" alt="" srcset="">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
-                                <b>John Dee 32, Bromo</b>
-                            </td>
-                        </tr>
-                    </table>
+                    <div  class="pfp"><img src="img_photo.png" alt=""></div>
+                    <div class="comment-text">
+                       <img src="Rate.png" class="rate" alt="" srcset="">
+                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.
+                       <br><b>John Dee 32, Bromo</b></p>
+                   </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="comment">
-                    <table>
-                        <tr>
-                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
-                            <td>
-                                <img src="Rate.png" class="rate" alt="" srcset="">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
-                                <b>John Dee 32, Bromo</b>
-                            </td>
-                        </tr>
-                    </table>
+                    <div  class="pfp"><img src="img_photo.png" alt=""></div>
+                    <div class="comment-text">
+                       <img src="Rate.png" class="rate" alt="" srcset="">
+                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.
+                       <br><b>John Dee 32, Bromo</b></p>
+                   </div>
                 </div>
             </div>
             <div class="carousel-item">
               <div class="comment">
-                  <table>
-                      <tr>
-                          <td  class="pfp"><img src="img_photo.png" alt=""></td>
-                          <td>
-                              <img src="Rate.png" class="rate" alt="" srcset="">
-                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
-                              <b>John Dee 32, Bromo</b>
-                          </td>
-                      </tr>
-                  </table>
+                  <div  class="pfp"><img src="img_photo.png" alt=""></div>
+                  <div class="comment-text">
+                     <img src="Rate.png" class="rate" alt="" srcset="">
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.
+                     <br><b>John Dee 32, Bromo</b></p>
+                 </div>
               </div>
           </div>
-            <div class="carousel-item">
-                <div class="comment">
-                    <table>
-                        <tr>
-                            <td  class="pfp"><img src="img_photo.png" alt=""></td>
-                            <td>
-                                <img src="Rate.png" class="rate" alt="" srcset="">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.</p>
-                                <b>John Dee 32, Bromo</b>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+          <div class="carousel-item">
+            <div class="comment">
+                <div  class="pfp"><img src="img_photo.png" alt=""></div>
+                <div class="comment-text">
+                   <img src="Rate.png" class="rate" alt="" srcset="">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci expedita magni consectetur excepturi vel, corporis deleniti rem culpa enim repellat sed architecto qui quidem quos eligendi laboriosam laborum alias soluta.
+                   <br><b>John Dee 32, Bromo</b></p>
+               </div>
             </div>
+        </div>
         </div>
         <div class="carousel-controls">
             <button class="prev-button"><img src="icons/fi_chevron-left.png" alt="" srcset=""></button>
@@ -199,7 +218,7 @@
       </div>
       <a class="button-green">Mulai Sewa Mobil</a>
     </div>
-    <div class="main6">
+    <div class="main6" id="faq">
       <div class="text">
         <h1>Frequently Asked Question</h1>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab animi eveniet adipisci laboriosam labore veniam ad error aperiam, quasi eius! Quidem nemo minima eaque! Molestiae dignissimos sint aliquam temporibus.</p>
@@ -258,10 +277,10 @@
           </div>
           <div class="menu">
             <ul type="none">
-              <li><a href="#">Our Services</a></li><br>
-              <li><a href="#">Why Us</a></li><br>
-              <li><a href="#">Testimonial</a></li><br>
-              <li><a href="#">FAQ </a></li>
+              <li><a href="#our-services" class="scroll-link">Our Services</a></li>
+              <li><a href="#why-us" class="scroll-link">Why Us?</a></li>
+              <li><a href="#testimonial" class="scroll-link">Testimonial</a></li>
+              <li><a href="#faq" class="scroll-link">FAQ</a></li>
             </ul>
           </div>
           <div class="social">
